@@ -6,6 +6,7 @@ const solution = (array) => {
         array[i] = array[j];
         array[j] = tmp;
       }
+      console.log(array);
     }
   }
   return array;
