@@ -15,4 +15,4 @@ const solution = (array, len) => {
   console.log(result);
 };
 
-solution([3, 4, 0, 1, 2, 4, 2, 4], 4);
+solution([7, 3, 1, 5, 3, 2, 4, 1], 7);

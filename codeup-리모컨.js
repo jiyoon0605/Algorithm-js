@@ -1,4 +1,4 @@
-{
+ {
   let cnt = 0;
 
   const solution2 = (a) => {
