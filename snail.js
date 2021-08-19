@@ -27,20 +27,6 @@ while (value <= n) {
   row--;
 }
 
-console.log(arr);
-// while (value < n) {
-//   for (let i = 0; i < column; i++) {
-//     w += index;
-//     if (arr[h][w] === null) arr[h][w] = value;
-//     value++;
-//   }
-
-//   for (let i = 0; i < row; i++) {
-//     if (arr[h][w] === null) arr[h][w] = value;
-//     value++;
-//     if (h === row - 1) break;
-//     h += index;
-//   }
-
-//   index *= -1;
-// }
+for (let a of arr) {
+  console.log(a.toString());
+}

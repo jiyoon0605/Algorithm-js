@@ -6,6 +6,6 @@ const solution = (n) => {
   return memo[index];
 };
 
-console.log(solution(2));
+console.log(solution(6));
 console.log(solution(8));
 console.log(solution(12));

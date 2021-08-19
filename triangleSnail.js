@@ -10,7 +10,8 @@ function solution(n) {
     for (let i = 0; i < n - 2; i++) answer[--col][--row] = ++value;
     n -= 3;
   }
-
-  return answer.flatMap((e) => e);
+  for (let a of answer) {
+    console.log(a.toString());
+  }
 }
 solution(6);

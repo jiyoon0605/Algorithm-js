@@ -1,4 +1,4 @@
- {
+{
   let cnt = 0;
 
   const solution2 = (a) => {
@@ -23,5 +23,5 @@
     return cnt;
   };
 
-  console.log(solution(3, 27));
+  console.log(solution(10, 1));
 }

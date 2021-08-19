@@ -21,15 +21,31 @@ function solution(board, moves) {
   return n * 2;
 }
 
-console.log(
-  solution(
-    [
-      [0, 0, 0, 0, 0],
-      [0, 0, 1, 0, 3],
-      [0, 2, 5, 0, 1],
-      [4, 2, 4, 4, 2],
-      [3, 5, 1, 3, 1],
-    ],
-    [1, 5, 3, 5, 1, 2, 1, 4]
-  )
-);
+// console.log(
+//   solution(
+//     [
+//       [0, 0, 0, 0, 0],
+//       [0, 0, 1, 0, 3],
+//       [0, 2, 5, 0, 1],
+//       [4, 2, 4, 4, 2],
+//       [3, 5, 1, 3, 1],
+//     ],
+//     [1, 5, 3, 5, 1, 2, 1, 4]
+//   )
+// );
+
+const getPattern = (pattern) => {
+  const arr = [];
+  const map = new Map();
+  for (let i = 0; i < pattern.length; i++) {
+    if (map.get(pattern[i]) !== undefined) {
+      arr.push(map.get(pattern[i]));
+    } else {
+      map.set(pattern[i], i);
+      arr.push(i);
+    }
+  }
+  return arr.join("");
+};
+
+console.log(getPattern("ccc"));
